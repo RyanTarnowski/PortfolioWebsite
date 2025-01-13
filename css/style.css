@@ -1,0 +1,107 @@
+* {
+    font-family: "Fira Code", sans-serif;
+}
+body{
+    margin: 0 0;
+    background-color: white;
+}
+
+header{
+    width: 100%;
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    background-color: black;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+nav h1{
+    color: white;
+}
+
+#mainNav{
+    display: flex;
+    list-style-type: none;
+    margin-left: auto;
+    color: white;
+}
+
+#mainNav a{
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+#mainNav a:hover{
+    font-weight: bold;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    margin: 100px auto;
+}
+
+#aboutme {
+    display: flex;
+    flex-direction: row;
+    margin-top: -200px; /*Added to fix anchor link issue where the heading gets cutoff by the nav bar*/
+    padding-top: 200px; /*Added to fix anchor link issue where the heading gets cutoff by the nav bar*/
+}
+
+#aboutme li{
+    list-style: url('../Images/school_black.svg');
+}
+
+#profilePhoto {
+    border-radius: 30%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: 0 20%;
+    margin: 25% 10%;
+}
+
+#projects li{
+    list-style: url('../Images/code_black.svg');
+    font-weight: bold;
+}
+
+#projects li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#projects section{
+    display: none;
+}
+
+#skills img{
+    height: 7%;
+    width: 7%;
+}
+
+#contact img{
+    height: 7%;
+    width: 7%;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+footer p{
+    font-size: small;
+}
