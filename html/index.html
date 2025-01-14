@@ -21,7 +21,13 @@
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="#team">Options</a></li>
+                    <li class="dropdown"><a href="">Options</a>
+                        <ul class="dropdown-content">
+                            <li id="lightMode"><a href="#">Light Mode</a></li>
+                            <li id="darkMode"><a href="#">Dark Mode</a></li>
+                            <li id="terminalMode"><a href="#">Terminal Mode</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>    
         </header>
@@ -58,15 +64,18 @@
                 <ul>
                     <li onclick="showProject('portfolio')" >Portfolio Website</li>
                     <section id="portfolio">
-                        <p>My portfolio website</p>
+                        <p>Portfolio website to keep track of my development.</p>
+                        <a href="https://github.com/RyanTarnowski/PortfolioWebsite" target="_blank">Portfolio Website Code</a>
                     </section>
                     <li onclick="showProject('yodaMessage')">Yoda's Message</li>
                     <section id="yodaMessage">
                         <p>A simple html website that utilizes JavaScript to generate a random message from Yoda.</p>
+                        <a href="https://github.com/RyanTarnowski/YodasMessage" target="_blank">Yoda's Message Code</a>
                     </section>
                     <li onclick="showProject('kvm')">KVM utility app</li>
                     <section id="kvm">
                         <p>KVM utility app that changes monitor inputs and switches usb connections between computers.</p>
+                        <a href="" target="_blank">KVM Utility Code</a>
                     </section>
                 </ul>
             </section>
@@ -90,6 +99,7 @@
 
         <footer>
             <p>Created by: Ryan Tarnowski 2025</p>
+            <p>Icons by: <a href="https://icons8.com/icons" target="_blank">icons8.com</a></p>
         </footer>
     </body>
 </html>

@@ -8,7 +8,7 @@ body{
 
 header{
     width: 100%;
-    overflow: hidden;
+    overflow: visible;
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     background-color: black;
@@ -30,7 +30,6 @@ nav h1{
     display: flex;
     list-style-type: none;
     margin-left: auto;
-    color: white;
 }
 
 #mainNav a{
@@ -41,6 +40,27 @@ nav h1{
 
 #mainNav a:hover{
     font-weight: bold;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    background-color: black;
+  }
+
+.dropdown-content li {
+    list-style: url('../Images/school_black.svg');
+}
+  
+.dropdown-content a {
+    display: block;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 main{
@@ -104,4 +124,5 @@ footer{
 
 footer p{
     font-size: small;
+    margin-right: 50px;
 }
