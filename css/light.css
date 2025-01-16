@@ -108,7 +108,8 @@ main{
     height: 300px;
     object-fit: cover;
     object-position: 0 20%;
-    margin: 25% 10%;
+    float: right;
+    top: 0;
 }
 
 #projects li{
@@ -148,4 +149,53 @@ footer{
 footer p{
     font-size: small;
     margin-right: 50px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .dropdown-content {
+        left:auto;
+        right:0;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    main {
+        margin: 0 20px;
+    }
+
+    h1 {
+        padding-left: 20px;
+    }
+
+    #aboutme {
+        margin-top: -100px; /*Added to fix anchor link issue where the heading gets cutoff by the nav bar*/
+    }
+
+    footer {
+        margin: 0 20px;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    nav{
+        flex-direction: column;
+    }
+
+    #mainNav{
+        margin-left: 0;
+    }
+
+    #aboutme {
+        margin-top: -60px; /*Added to fix anchor link issue where the heading gets cutoff by the nav bar*/
+    }
+
+    #profilePhoto {
+        width: 150px;
+        height: 150px;
+    }
+
+    #projects img {
+        width: 50%;
+        height: 50%;
+    }
 }
