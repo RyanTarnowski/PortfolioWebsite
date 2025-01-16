@@ -3,7 +3,8 @@
 }
 body{
     margin: 0 0;
-    background-color: white;
+    background-color: #1f1f1f;
+    color: #69d0fe;
 }
 
 header{
@@ -11,7 +12,7 @@ header{
     overflow: visible;
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
-    background-color: black;
+    background-color: #181818;
 }
 
 nav{
@@ -20,7 +21,15 @@ nav{
     align-items: center;
     max-width: 900px;
     margin: 0 auto;
-    color: white;
+    color: #dcdcaa;
+}
+
+a {
+    color:  #ce8248;
+}
+
+a:visited {
+    color: #9c341f;
 }
 
 #mainNav{
@@ -31,11 +40,11 @@ nav{
 
 #mainNav a{
     margin: 10px;
-    color: white;
+    color: #dcdcaa;
     text-decoration: none;
 }
 
-#mainNav a:hover, .dropdown-content li:hover{
+a:hover, .dropdown-content li:hover{
     font-weight: bold;
 }
 
@@ -44,7 +53,7 @@ nav{
     position: absolute;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    background-color: black;
+    background-color: #181818;
 }
 
 .dropdown-content a {
@@ -64,15 +73,15 @@ nav{
 }
 
 #lightMode {
-    background-image: url('../Images/icons8-sun-30-Light.png');
+    background-image: url('../Images/DarkTheme/icons8-sun-30.png');
 }
 
 #darkMode {
-    background-image: url('../Images/icons8-moon-30-Light.png');
+    background-image: url('../Images/DarkTheme/icons8-moon-30.png');
 }
 
 #terminalMode {
-    background-image: url('../Images/icons8-terminal-30-Light.png');
+    background-image: url('../Images/DarkTheme/icons8-terminal-30.png');
 }
 
 main{
@@ -90,7 +99,7 @@ main{
 }
 
 #aboutme li{
-    background-image: url('../Images/school_black.svg');
+    background-image: url('../Images/DarkTheme/icons8-school-50.png');
 }
 
 #profilePhoto {
@@ -103,7 +112,7 @@ main{
 }
 
 #projects li{
-    background-image: url('../Images/code_black.svg');
+    background-image: url('../Images/DarkTheme/icons8-project-48.png');
     font-weight: bold;
 }
 
@@ -114,6 +123,8 @@ main{
 
 #projects section{
     display: none;
+    margin-left: 30px;
+    padding-bottom: 20px;
 }
 
 #skills img{

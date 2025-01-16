@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link href="../css/style.css" type="text/css" rel="stylesheet">
+        <link id="siteStyle" href="../css/light.css" type="text/css" rel="stylesheet">
         <script src="../js/scripts.js"></script>
 
         <title>Ryan Tarnowski - Portfolio</title>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
-
-        <!--font ideas  default: Fira Code   terminal: Jersey 15-->
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=VT323&display=swap" rel="stylesheet">
     </head>
     <body>
+        <div id="monitorCornerTopLeft" class="monitorTopCorner"></div>
+        <div id="monitorTop" class="monitorTopBottom"></div>
+        <div id="monitorCornerTopRight" class="monitorTopCorner"></div>
+        <div id="monitorLeft" class="monitorSides"></div>
+        <div id="monitorRight" class="monitorSides"></div>
+        <div id="monitorCornerBottomLeft" class="monitorBottomCorner"></div>
+        <div id="monitorBottom" class="monitorTopBottom"></div>
+        <div id="monitorBottomButtons"></div>
+        <div id="monitorCornerBottomRight" class="monitorBottomCorner"></div>
+
         <header>      
             <nav>
                 <h1>Ryan Tarnowski</h1>
@@ -21,15 +29,15 @@
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li class="dropdown"><a href="">Options</a>
+                    <li class="dropdown"><a>Options</a>
                         <ul class="dropdown-content">
-                            <li id="lightMode"><a href="#">Light Mode</a></li>
-                            <li id="darkMode"><a href="#">Dark Mode</a></li>
-                            <li id="terminalMode"><a href="#">Terminal Mode</a></li>
+                            <li id="lightMode" class="list-icon" onclick="changeTheme('light')">Light Mode</li>
+                            <li id="darkMode" class="list-icon" onclick="changeTheme('dark')">Dark Mode</li>
+                            <li id="terminalMode" class="list-icon" onclick="changeTheme('terminal')">Terminal Mode</li>
                         </ul>
                     </li>
-                </ul>
-            </nav>    
+                </ul>           
+            </nav>
         </header>
 
         <main>
@@ -46,9 +54,9 @@
                         My goal is to continue learning and implementing new technologies as often as a can.<br><br>My rough road map of learning includes:
                     </p>
                     <ul>
-                        <li>Full-Stack Engineer course (<a href="https://www.codecademy.com/" target="_blank">Codecademy</a>)</li>
-                        <li>Data Structures and Algorithms (<a href="https://neetcode.io/" target="_blank">Neetcode</a>)</li>
-                        <li>Coding Challenges (<a href="https://codecrafters.io/" target="_blank">Codecrafters</a>)</li>
+                        <li class="list-icon">Full-Stack Engineer course (<a href="https://www.codecademy.com/" target="_blank">Codecademy</a>)</li>
+                        <li class="list-icon">Data Structures and Algorithms (<a href="https://neetcode.io/" target="_blank">Neetcode</a>)</li>
+                        <li class="list-icon">Coding Challenges (<a href="https://codecrafters.io/" target="_blank">Codecrafters</a>)</li>
                     </ul>
                     <p>
                         In my free time I enjoy learning about computer hardware, low level programing and other mechanical/engineering concepts. I have my own home lab where I setup virtual environment and experiment with containers, server management and some networking.
@@ -62,38 +70,40 @@
             <section id="projects">
                 <h2>Projects</h2>
                 <ul>
-                    <li onclick="showProject('portfolio')" >Portfolio Website</li>
+                    <li  class="list-icon" onclick="showProject('portfolio')" >Portfolio Website</li>
                     <section id="portfolio">
                         <p>Portfolio website to keep track of my development.</p>
+                        <img src="../images/Portfolio.png" alt="Portfolio screenshot"><br>
                         <a href="https://github.com/RyanTarnowski/PortfolioWebsite" target="_blank">Portfolio Website Code</a>
                     </section>
-                    <li onclick="showProject('yodaMessage')">Yoda's Message</li>
+                    <li class="list-icon" onclick="showProject('yodaMessage')">Yoda's Message</li>
                     <section id="yodaMessage">
                         <p>A simple html website that utilizes JavaScript to generate a random message from Yoda.</p>
                         <a href="https://github.com/RyanTarnowski/YodasMessage" target="_blank">Yoda's Message Code</a>
                     </section>
-                    <li onclick="showProject('kvm')">KVM utility app</li>
+                    <li class="list-icon" onclick="showProject('kvm')">KVM utility app</li>
                     <section id="kvm">
                         <p>KVM utility app that changes monitor inputs and switches usb connections between computers.</p>
+                        <img src="../images/kvm.png" alt="KVM interface"><br>
                         <a href="" target="_blank">KVM Utility Code</a>
                     </section>
                 </ul>
             </section>
             <section id="skills">
                 <h2>Skills</h2>
-                <img src="../images/icons8-vb-100.png" alt="VB.net icon">
-                <img src="../images/icons8-c-100.png" alt="C# icon">
-                <img src="../images/icons8-asp-100.png" alt="ASP.net icon">
-                <img src="../images/icons8-sql-96.png" alt="MS SQL icon">
-                <img src="../images/icons8-html-100.png" alt="HTML icon">
-                <img src="../images/icons8-css3-100.png" alt="CSS icon">
-                <img src="../images/icons8-javascript-100.png" alt="JavaScript icon">
-                <img src="../images/icons8-angular-100.png" alt="Angular icon">
+                <img id="vb" src="../images/icons8-vb-100.png" alt="VB.net icon">
+                <img id="c" src="../images/icons8-c-100.png" alt="C# icon">
+                <img id="asp" src="../images/icons8-asp-100.png" alt="ASP.net icon">
+                <img id="sql" src="../images/icons8-sql-96.png" alt="MS SQL icon">
+                <img id="html" src="../images/icons8-html-100.png" alt="HTML icon">
+                <img id="css" src="../images/icons8-css3-100.png" alt="CSS icon">
+                <img id="js" src="../images/icons8-javascript-100.png" alt="JavaScript icon">
+                <img id="ang" src="../images/icons8-angular-100.png" alt="Angular icon">
             </section>
             <section id="contact">
                 <h2>Contact</h2>
-                <a href="https://linkedin.com/in/ryan-tarnowski-9bba8192" target="_blank"><img src="../images/icons8-linked-in-100.png" alt="LinkedIn icon"></a>
-                <a href="https://github.com/RyanTarnowski" target="_blank"><img src="../images/icons8-github-100.png" alt="GitHub icon"></a>
+                <a href="https://linkedin.com/in/ryan-tarnowski-9bba8192" target="_blank"><img id="linkedIn" src="../images/icons8-linked-in-100.png" alt="LinkedIn icon"></a>
+                <a href="https://github.com/RyanTarnowski" target="_blank"><img id="github" src="../images/icons8-github-100.png" alt="GitHub icon"></a>
             </section>
         </main>
 

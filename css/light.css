@@ -4,6 +4,7 @@
 body{
     margin: 0 0;
     background-color: white;
+    color: black;
 }
 
 header{
@@ -23,6 +24,14 @@ nav{
     color: white;
 }
 
+a {
+    color:  black;
+}
+
+a:visited {
+    color: #2c7cd6;
+}
+
 #mainNav{
     display: flex;
     list-style-type: none;
@@ -35,7 +44,7 @@ nav{
     text-decoration: none;
 }
 
-#mainNav a:hover, .dropdown-content li:hover{
+a:hover, .dropdown-content li:hover{
     font-weight: bold;
 }
 
@@ -64,15 +73,15 @@ nav{
 }
 
 #lightMode {
-    background-image: url('../Images/icons8-sun-30-Light.png');
+    background-image: url('../Images/LightTheme/icons8-sun-30.png');
 }
 
 #darkMode {
-    background-image: url('../Images/icons8-moon-30-Light.png');
+    background-image: url('../Images/LightTheme/icons8-moon-30.png');
 }
 
 #terminalMode {
-    background-image: url('../Images/icons8-terminal-30-Light.png');
+    background-image: url('../Images/LightTheme/icons8-terminal-30.png');
 }
 
 main{
@@ -90,7 +99,7 @@ main{
 }
 
 #aboutme li{
-    background-image: url('../Images/school_black.svg');
+    background-image: url('../Images/LightTheme/icons8-school-50.png');
 }
 
 #profilePhoto {
@@ -103,7 +112,7 @@ main{
 }
 
 #projects li{
-    background-image: url('../Images/code_black.svg');
+    background-image: url('../Images/LightTheme/icons8-project-48.png');
     font-weight: bold;
 }
 
@@ -114,6 +123,8 @@ main{
 
 #projects section{
     display: none;
+    margin-left: 30px;
+    padding-bottom: 20px;
 }
 
 #skills img{
