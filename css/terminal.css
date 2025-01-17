@@ -85,15 +85,15 @@ a:hover {
 }
 
 #lightMode {
-    background-image: url('../Images/TerminalTheme/icons8-sun-30.png');
+    background-image: url('../images/TerminalTheme/icons8-sun-30.png');
 }
 
 #darkMode {
-    background-image: url('../Images/TerminalTheme/icons8-moon-30.png');
+    background-image: url('../images/TerminalTheme/icons8-moon-30.png');
 }
 
 #terminalMode {
-    background-image: url('../Images/TerminalTheme/icons8-terminal-30.png');
+    background-image: url('../images/TerminalTheme/icons8-terminal-30.png');
 }
 
 main{
@@ -112,7 +112,7 @@ main{
 }
 
 #aboutme li{
-    background-image: url('../Images/TerminalTheme/icons8-school-50.png');
+    background-image: url('../images/TerminalTheme/icons8-school-50.png');
 }
 
 #profilePhoto {
@@ -126,7 +126,7 @@ main{
 }
 
 #projects li{
-    background-image: url('../Images/TerminalTheme/icons8-project-48.png');
+    background-image: url('../images/TerminalTheme/icons8-project-48.png');
     font-weight: bold;
 }
 
@@ -174,7 +174,7 @@ footer p, footer a{
     width: 140px;
     position: fixed;
     z-index: 99;
-    background-image: url('../Images/TerminalTheme/MonitorCorner.png');
+    background-image: url('../images/TerminalTheme/MonitorCorner.png');
 }
 
 .monitorTopBottom {
@@ -182,7 +182,7 @@ footer p, footer a{
     width: 100%;
     position: fixed;
     z-index: 98;
-    background-image: url('../Images/TerminalTheme/MonitorBezel.png');
+    background-image: url('../images/TerminalTheme/MonitorBezel.png');
 }
 
 .monitorSides {
@@ -191,7 +191,7 @@ footer p, footer a{
     position: fixed;
     top: 0;
     z-index: 98;
-    background-image: url('../Images/TerminalTheme/MonitorLeft.png');
+    background-image: url('../images/TerminalTheme/MonitorLeft.png');
 }
 
 #monitorCornerTopLeft {
@@ -237,7 +237,7 @@ footer p, footer a{
     bottom: 0;
     right: 140px;
     z-index: 98;
-    background-image: url('../Images/TerminalTheme/MonitorButtons.png');
+    background-image: url('../images/TerminalTheme/MonitorButtons.png');
 }
 
 @media only screen and (max-width: 1000px) {

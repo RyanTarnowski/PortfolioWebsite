@@ -74,15 +74,15 @@ a:hover, .dropdown-content li:hover{
 }
 
 #lightMode {
-    background-image: url('../Images/LightTheme/icons8-sun-30.png');
+    background-image: url('../images/LightTheme/icons8-sun-30.png');
 }
 
 #darkMode {
-    background-image: url('../Images/LightTheme/icons8-moon-30.png');
+    background-image: url('../images/LightTheme/icons8-moon-30.png');
 }
 
 #terminalMode {
-    background-image: url('../Images/LightTheme/icons8-terminal-30.png');
+    background-image: url('../images/LightTheme/icons8-terminal-30.png');
 }
 
 main{
@@ -100,7 +100,7 @@ main{
 }
 
 #aboutme li{
-    background-image: url('../Images/LightTheme/icons8-school-50.png');
+    background-image: url('../images/LightTheme/icons8-school-50.png');
 }
 
 #profilePhoto {
@@ -114,7 +114,7 @@ main{
 }
 
 #projects li{
-    background-image: url('../Images/LightTheme/icons8-project-48.png');
+    background-image: url('../images/LightTheme/icons8-project-48.png');
     font-weight: bold;
 }
 
